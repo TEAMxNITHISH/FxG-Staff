@@ -6,21 +6,30 @@
   <title>FxG Staff Hub</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .timeline {max-width:700px; margin:50px auto; position:relative;}
-    .step {margin:40px 0; padding:20px; background:var(--panel); border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.4);}
-    .step h2 {margin-bottom:6px;}
-    .step a {color:#675cff; font-weight:600; text-decoration:none;}
-    .line {position:absolute; top:0; left:50%; width:4px; height:100%; background:#675cff; transform:translateX(-50%);}
+    .cards {display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); margin-top:40px;}
+    .card-role {padding:30px; border-radius:12px; text-align:center; font-weight:700; color:#fff; cursor:pointer; transition:.25s;}
+    .card-role:hover {transform:scale(1.05);}
+    .founder {background:var(--founder);}
+    .owner {background:var(--owner);}
+    .co-owner {background:var(--co-owner);}
+    .main-admin {background:var(--main-admin);}
+    .admin {background:var(--admin);}
+    .moderator {background:var(--moderator);}
+    .helper {background:var(--helper);}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1 style="text-align:center; margin-top:30px;">FxG Staff Journey</h1>
-    <div class="timeline">
-      <div class="line"></div>
-      <div class="step"><h2>📖 Read the Rules</h2><p>Start by learning our <a href="rules.html">Staff Guide</a>.</p></div>
-      <div class="step"><h2>👥 Current Staff</h2><p>View our <a href="staff.html">Staff Roster</a> and ranks.</p></div>
-      <div class="step"><h2>💬 Join the Community</h2><p>Stay connected on <a href="https://discord.com/invite/mnJpsUNVV5">Discord</a>.</p></div>
+    <h1 style="text-align:center; margin-top:50px;">FxG Staff Hub</h1>
+    <p style="text-align:center; color:var(--muted)">Choose your section</p>
+    <div class="cards">
+      <a href="staff.html" class="card-role founder">Founder</a>
+      <a href="staff.html" class="card-role owner">Owner</a>
+      <a href="staff.html" class="card-role co-owner">Co-Owner</a>
+      <a href="staff.html" class="card-role main-admin">Main Admin</a>
+      <a href="staff.html" class="card-role admin">Admin</a>
+      <a href="staff.html" class="card-role moderator">Moderator</a>
+      <a href="staff.html" class="card-role helper">Helper</a>
     </div>
   </div>
 </body>
