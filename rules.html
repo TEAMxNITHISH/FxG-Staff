@@ -1,55 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FxG Staff Hub — Rules</title>
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FxG Staff Guide & Rules</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Tiny page-specific tweaks (keeps your main style.css clean) -->
+  <style>
+    .toc { display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 0 }
+    .toc a { background:var(--panel-2); padding:8px 10px; border-radius:8px; text-decoration:none }
+    .list { margin-left:1.1rem }
+    .grid-2 { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; background:#0e1220; border:1px solid #222; padding:2px 6px; border-radius:6px }
+    .muted { color: var(--muted) }
+    .tag { font-size:.85rem; padding:2px 8px; border-radius:999px; background:var(--panel-2) }
+    .warn { background:#3b1c1c }
+    .good { background:#1c2f1c }
+    .callout { background:var(--panel-2); border-left:4px solid #675cff; padding:12px; border-radius:10px }
+    .section-anchor { scroll-margin-top:90px }
+  </style>
 </head>
+
 <body>
-<header>
-  <div class="wrap nav">
-    <div class="brand">
-      <div class="logo"></div>
-      FxG Staff Hub
+  <!-- Header -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo"></div>
+        FxG Staff Hub
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="rules.html" class="active">Staff Guide</a>
+      </nav>
     </div>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="rules.html" class="active">Rules</a>
-      <a href="giveaways.html">Giveaways</a>
-      <a href="staff.html">Staff</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="wrap">
-  <section>
-    <h1>📘 Global Rules</h1>
-    <div class="card">
-      <ul>
-        <li>Stay professional, no harassment/slang.</li>
-        <li>No leaking staff chats/screenshots.</li>
-        <li>Must remain active (8h per week).</li>
-        <li>Payout proof required in <b>📜┃proofs</b>.</li>
-        <li>Use correct tags in Market: Buying, Selling, Lowballing, Sold.</li>
-        <li>No vague posts (like “anyone enderdragon 4/4”).</li>
+  <main class="wrap">
+    <!-- Title -->
+    <section class="card">
+      <h1>FAKEPIXEL GIVEAWAYS Staff Guide</h1>
+      <p class="muted">Credits to all higher staffs for their remarkable effort for creating the guidebooks!</p>
+      <div class="toc">
+        <a href="#intro">Introduction</a>
+        <a href="#rules">Staff Rules</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#navigation">Discord Navigation</a>
+        <a href="#commands">Staff Commands</a>
+        <a href="#warns">Warn System</a>
+        <a href="#giveaways">How to Do Giveaways</a>
+        <a href="#tickets">Ticket & Payout</a>
+        <a href="#thanks">Closing</a>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="intro" class="card section-anchor">
+      <h2>INTRODUCTION</h2>
+      <p>
+        Congratulations and welcome to the Fakepixel Giveaways staff team. This directory will coach you on your
+        roles and responsibilities. Follow these guidelines at all times—disregarding anything in this handbook risks
+        your staff position.
+      </p>
+      <p>
+        Your duty is to ensure members have the best experience possible. If you have questions, ask a fellow staff
+        member. Remember: your behavior on other servers also affects your position here—toxicity or cheating elsewhere
+        can lead to demotion.
+      </p>
+    </section>
+
+    <!-- Staff Rules -->
+    <section id="rules" class="card section-anchor">
+      <h2>STAFF RULES</h2>
+      <p class="muted">(Do not create your own rules or punish based on personal reasons. Use the policy below.)</p>
+      <ul class="list">
+        <li>✦ <b>Rules</b> — All rules apply to staff. Failure to follow = punishment.</li>
+        <li>✦ <b>Professionalism</b> — Be professional at <b>ALL</b> times on all platforms; no bad language or harassment.</li>
+        <li>✦ <b>Nicknames</b> — Do not use inappropriate nicknames. Changing others’ names without permission = warn.</li>
+        <li>✦ <b>Evidence</b> — Post proof of every punishment in <span class="kbd">#punishment-logs</span>.</li>
+        <li>✦ <b>Abusing</b> — Any permission abuse = green warn; red warn possible.</li>
+        <li>✦ <b>Activity</b> — Be active at least <b>8 hours/week</b>. Longer than 1 day inactive? File in
+            <span class="kbd">#absences</span>.</li>
+        <li>✦ <b>Tickets</b> — Whoever claims first owns it. Do not enter others’ tickets without permission.</li>
+        <li>✦ <b>Borders</b> — Do not reveal which staff punished a player (counts as staff leak).</li>
+        <li>✦ <b>Staff Information</b> — Staff-only info must remain private. Leaks can lead to red warn/demotion/blacklist.</li>
+        <li>✦ <b>Fairness</b> — No punishments based on personal disputes.</li>
+        <li>✦ <b>Discord Security</b> — <b>2FA</b> required. Non-staff are not allowed in staff VCs.</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>⚠️ Punishments</h2>
-    <div class="card">
-      <ul>
-        <li>Discrimination — 3d timeout</li>
-        <li>Harassment — 2d timeout</li>
-        <li>Advertising — 7d timeout</li>
-        <li>Threats / DDoS / Doxing — Permanent ban</li>
-        <li>Malicious Activity / NSFW — Permanent ban or 3d mute</li>
+    <!-- Announcements -->
+    <section id="announcements" class="card section-anchor">
+      <h2>WEEKLY & MONTHLY STAFF ANNOUNCEMENTS</h2>
+      <div class="grid-2">
+        <div class="callout">
+          <h3>Weekly (Sunday)</h3>
+          <ul class="list">
+            <li>Important notes</li>
+            <li>Staff of the Week</li>
+            <li>Other updates</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h3>Monthly</h3>
+          <p>
+            <b>Staff of the Month</b> is selected from those who most frequently won Staff of the Week.
+            <span class="muted">(Titles are only for Deputy and below.)</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discord Navigation -->
+    <section id="navigation" class="card section-anchor">
+      <h2>NAVIGATION (Important Channels)</h2>
+      <ul class="list">
+        <li>✦ <b>Announcements (staff)</b> — Weekly announcements & key info.</li>
+        <li>✦ <b>Staff Updates (public)</b> — Promotions & demotions.</li>
+        <li>✦ <b>Staff-suggestions (staff)</b> — Propose new rules/systems.</li>
+        <li>✦ <b>Absences (staff)</b> — File absences of 1+ day with: <i>Name, Reason, Duration</i>.
+          <br><span class="muted">Accepted by Deputy+; will be ticked ✅ when approved.</span></li>
+        <li>✦ <b>Records (staff)</b> — Keep payment records for giveaway winners (IGN, Discord ID, Prize, Proof).</li>
+        <li>✦ <b>Proofs (public)</b> — Public proofs of giveaway payouts.</li>
+        <li>✦ <b>Staff Tracker (staff)</b> — See pinned post for actions.</li>
+        <li>✦ <b>Punishment Logs (staff)</b> — Log: <i>Username – ID – Punishment – Reason</i>.</li>
+        <li>✦ <b>Request-your-punishment</b> — Ask higher staff to issue bans; reply “Log it” when accepted.</li>
+        <li>✦ <b>Birthdays (staff)</b> — Post <i>IGN</i> & <i>DOB</i>.</li>
+        <li>✦ <b>warns (staff)</b> — Warns for staff who broke rules; only Deputy+ issues warns.</li>
+        <li>✦ <b>bot-cmds</b> — Use all moderation commands here only.</li>
+        <li>✦ <b>staff-giveaways</b> — Staff-only giveaways; require Admin+ permission.</li>
+        <li>✦ <b>chat-revive-logs (Admin+)</b> — Ping chat revive (max <b>3/day</b> across all chats).</li>
       </ul>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>© FakepixelxGiveaways — FxG Staff Hub</footer>
+    <!-- Staff Commands -->
+    <section id="commands" class="card section-anchor">
+      <h2>STAFF COMMANDS</h2>
+      <ul class="list">
+        <li><span class="kbd">?timeout</span> or <span class="kbd">?to</span> — Timeout members</li>
+        <li><span class="kbd">?removetimeout</span> or <span class="kbd">?rto</span> — Remove timeout</li>
+        <li><span class="kbd">?kick</span> — Kick member</li>
+        <li><span class="kbd">?ban</span> / <span class="kbd">?unban</span> — Ban / Unban member</li>
+        <li><span class="kbd">?setnick</span> — Change nickname</li>
+        <li><span class="kbd">?purge &lt;amount&gt;</span> — Delete multiple messages (Admin+)</li>
+        <li><span class="kbd">/giveaway create</span> — Host a giveaway</li>
+        <li><span class="kbd">/reroll &lt;giveaway id&gt;</span> — Reroll a giveaway</li>
+      </ul>
+    </section>
+
+    <!-- Warn System -->
+    <section id="warns" class="card section-anchor">
+      <h2>WARNS (Discipline System)</h2>
+      <p>Warnings are issued for staff code violations. Multiple warns may lead to demotion.</p>
+      <div class="grid-2">
+        <div class="callout warn">
+          <h3>Green Warn</h3>
+          <p>Lasts <b>7 days</b>.</p>
+        </div>
+        <div class="callout warn">
+          <h3>Red Warn</h3>
+          <p>Lasts <b>14 days</b>.</p>
+        </div>
+      </div>
+      <ul class="list">
+        <li>Max Green Warns → becomes a Red Warn.</li>
+        <li>Max Red Warns → removal from staff team.</li>
+        <li>Under any warn → ineligible for promotion.</li>
+        <li><b>Verbal Warns</b> may be used for very minor first-time mistakes.</li>
+      </ul>
+    </section>
+
+    <!-- Giveaways -->
+    <section id="giveaways" class="card section-anchor">
+      <h2>HOW TO DO GIVEAWAYS</h2>
+
+      <h3>Hosting Giveaways</h3>
+      <p>Use <b>@Giveaway Boat</b> only with the command:
+        <span class="kbd">/giveaway create &lt;duration&gt; &lt;winners&gt; &lt;prize&gt; &lt;host name&gt;</span>
+      </p>
+
+      <div class="grid-2">
+        <div class="callout">
+          <h4>🎉┃giveaways-1 / 🎉┃giveaway-2</h4>
+          <ul class="list">
+            <li>Min prize: <b>3m</b></li>
+            <li>Duration: <b>1h – 1d</b> (depends on prize)</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h4>💬┃general (Quick Drops)</h4>
+          <ul class="list">
+            <li>Min prize: <b>2m</b></li>
+            <li>Duration: <b>1–5 mins</b></li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h4>🎊┃sponsored-giveaway</h4>
+          <ul class="list">
+            <li>Ticket/Entry cost allowed; Prize must be <b>≥ 3m</b></li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h4>🎉┃huge-giveaways</h4>
+          <ul class="list">
+            <li>Min per winner: <b>50m</b></li>
+            <li>Duration: <b>1–7 days</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><b>After hosting:</b> Ping <span class="tag"> @Giveaway</span> (not @everyone/@here). For giveaway channels, ping
+        <span class="tag">Giveaway</span>; for general chat quick drops, ping <span class="tag">Quickdrop</span>.</p>
+      </div>
+    </section>
+
+    <!-- Tickets & Payout -->
+    <section id="tickets" class="card section-anchor">
+      <h2>TICKET HANDLING & PAYOUT</h2>
+      <ul class="list">
+        <li>When a winner opens a ticket, verify their Auction House listing is on <b>BIN</b> (not BID).</li>
+        <li>After payout, add proof to <span class="kbd">📜┃proofs</span>, log in <span class="kbd">📓┃records</span>,
+            and update <span class="kbd">#staff-tracker</span>.</li>
+        <li>Do not interfere in someone else’s ticket; use the <b>Claim</b> button.</li>
+        <li>If someone interferes, DM a higher (Deputy+) immediately.</li>
+        <li><b>Claim Window:</b> Winners must claim within <b>24 hours</b> of win. After 24h, decline the claim.</li>
+        <li>Not paying out within 24h of a valid claim → <b>Green Warn</b>.</li>
+      </ul>
+    </section>
+
+    <!-- Closing -->
+    <section id="thanks" class="card section-anchor">
+      <h2>Thank You</h2>
+      <p>
+        Thank you for being part of the Fakepixel Giveaways Staff Team! Your efforts power the community.
+        If you have questions, ask a mentor or higher staff any time.
+      </p>
+      <p><b>Welcome to the Team!</b></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© FxG Staff Hub</div>
+  </footer>
 </body>
 </html>
