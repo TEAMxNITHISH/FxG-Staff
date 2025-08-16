@@ -1,0 +1,73 @@
+:root {
+  --bg:#0f1117; 
+  --panel:#151928; 
+  --panel-2:#1b2033; 
+  --text:#e7e9ee; 
+  --muted:#a7b0c0;
+
+  --founder:#e67e22;
+  --owner:#d42020;
+  --co-owner:#b02b2b;
+  --main-admin:#db3a3a;
+  --admin:#9c2020;
+  --moderator:#4ca50d;
+  --helper:#5555ff;
+}
+
+* { box-sizing:border-box; margin:0; padding:0 }
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.wrap { max-width:1200px; margin:0 auto; padding:0 20px }
+
+/* Header & Nav */
+header { background:#151928; position:sticky; top:0; z-index:10 }
+.nav { display:flex; justify-content:space-between; align-items:center; padding:14px 0 }
+.brand { display:flex; align-items:center; gap:10px; font-weight:800; color:var(--text) }
+.logo { width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#ff3355,#675cff) }
+.menu { display:flex; gap:14px }
+.menu a { 
+  color: var(--text); 
+  text-decoration:none; 
+  font-weight:600; 
+  padding:8px 12px; 
+  border-radius:8px; 
+  transition: background 0.2s; 
+}
+.menu a:hover { background: var(--panel-2); }
+
+/* Headings & Sections */
+h1,h2,h3 { margin-bottom:10px; }
+section { padding:30px 0; }
+.card { background: var(--panel); border-radius:12px; padding:18px; margin-bottom:16px; }
+
+/* Footer */
+footer { padding:20px 0; text-align:center; color:var(--muted); border-top:1px solid #222 }
+
+/* Staff Roster */
+.roster { 
+  display:grid; 
+  gap:12px; 
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); 
+}
+.person { 
+  padding:12px; 
+  background: var(--panel-2); 
+  border-radius:10px; 
+  text-align:center; 
+  font-weight:600; 
+  color: var(--text); 
+}
+.rank { font-size:12px; margin-bottom:6px; }
+
+/* Role colors */
+.founder .rank { color: var(--founder); }
+.owner .rank { color: var(--owner); }
+.co-owner .rank { color: var(--co-owner); }
+.main-admin .rank { color: var(--main-admin); }
+.admin .rank { color: var(--admin); }
+.moderator .rank { color: var(--moderator); }
+.helper .rank { color: var(--helper); }
