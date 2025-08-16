@@ -6,31 +6,29 @@
   <title>FxG Staff Hub</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .cards {display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); margin-top:40px;}
-    .card-role {padding:30px; border-radius:12px; text-align:center; font-weight:700; color:#fff; cursor:pointer; transition:.25s;}
-    .card-role:hover {transform:scale(1.05);}
-    .founder {background:var(--founder);}
-    .owner {background:var(--owner);}
-    .co-owner {background:var(--co-owner);}
-    .main-admin {background:var(--main-admin);}
-    .admin {background:var(--admin);}
-    .moderator {background:var(--moderator);}
-    .helper {background:var(--helper);}
+    body {
+      display:flex; justify-content:center; align-items:center; height:100vh;
+      background:#0f1117; color:var(--text);
+      background:radial-gradient(circle at center,#1b2033,#0f1117);
+    }
+    .center {text-align:center;}
+    .center img {width:140px; margin-bottom:20px; animation:pulse 3s infinite;}
+    .center h1 {font-size:2.5rem; margin-bottom:15px;}
+    .btn {
+      display:inline-block; margin-top:20px; background:#675cff; color:#fff;
+      padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:600;
+      transition:.3s;
+    }
+    .btn:hover {background:#806dff; transform:scale(1.05);}
+    @keyframes pulse {0%,100%{transform:scale(1);}50%{transform:scale(1.1);}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1 style="text-align:center; margin-top:50px;">FxG Staff Hub</h1>
-    <p style="text-align:center; color:var(--muted)">Choose your section</p>
-    <div class="cards">
-      <a href="staff.html" class="card-role founder">Founder</a>
-      <a href="staff.html" class="card-role owner">Owner</a>
-      <a href="staff.html" class="card-role co-owner">Co-Owner</a>
-      <a href="staff.html" class="card-role main-admin">Main Admin</a>
-      <a href="staff.html" class="card-role admin">Admin</a>
-      <a href="staff.html" class="card-role moderator">Moderator</a>
-      <a href="staff.html" class="card-role helper">Helper</a>
-    </div>
+  <div class="center">
+    <img src="logo.png" alt="FxG Logo">
+    <h1>Welcome to FxG Staff Hub</h1>
+    <p>Your secure staff portal</p>
+    <a href="rules.html" class="btn">Enter Hub</a>
   </div>
 </body>
 </html>
